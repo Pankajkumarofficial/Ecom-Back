@@ -4,7 +4,7 @@ import { BaseQuery, newProductRequestBody, searchRequestQuery } from "../types/t
 import { product } from "../models/productSchema.js";
 import ErrorHandler from "../utils/utility-class.js";
 import { rm } from "fs";
-import { myCache } from "../index.js";
+import { myCache } from "../app.js";
 import { invalidateCache } from "../utils/features.js";
 
 export const getLatestProduct = TryCatch(async (req: Request<{}, {}, newProductRequestBody>, res, next) => {

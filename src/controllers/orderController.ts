@@ -4,7 +4,7 @@ import { NewOrderRequestBody } from "../types/types.js";
 import { Order } from "../models/orderSchema.js";
 import { invalidateCache, reduceStock } from "../utils/features.js";
 import ErrorHandler from "../utils/utility-class.js";
-import { myCache } from "../index.js";
+import { myCache } from "../app.js";
 
 export const myOrders = TryCatch(async (req, res, next) => {
     const user = req.query.id as string
