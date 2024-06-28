@@ -2,7 +2,7 @@
   "name": "ecommerce-backend",
   "version": "1.0.0",
   "description": "Your description here",
-  "main": "app.ts",
+  "main": "./dist/app.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
