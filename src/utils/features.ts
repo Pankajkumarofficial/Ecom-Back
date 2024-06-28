@@ -1,7 +1,7 @@
 import mongoose, { Document } from "mongoose";
 import dotenv from 'dotenv'
 import { OrderItemType, invalidateCacheType } from "../types/types.js";
-import { myCache } from "../app.js";
+import { myCache } from "../index.js";
 import { product } from "../models/productSchema.js";
 
 dotenv.config();
